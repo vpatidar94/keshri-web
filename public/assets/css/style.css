@@ -1679,3 +1679,8 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+.footer-logo {
+  height: 250px;
+  float: right;
+}

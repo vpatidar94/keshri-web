@@ -13,6 +13,12 @@
   //   include( $php_email_form );
   // } else {
   //   die( 'Unable to load the "PHP Email Form" Library!');
+  // $contact->smtp = array(
+  //   'host' => 'smtpout.secureserver.net',
+  //   'username' => 'ak93patidar@gmail.com',
+  //   'password' => 'ankit@210patidar',
+  //   'port' => '465'
+  // );
   // }
 
   if(isset($_POST['submit'])){
@@ -23,7 +29,7 @@
     $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
+    echo "Xx xx xx x x  $"
     mail($to,$subject,$message,$headers);
     echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
